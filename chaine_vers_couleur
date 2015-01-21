@@ -1,0 +1,75 @@
+// Résumé : Change une variable chaîne en variable Couleur 
+// Syntaxe :
+// <Résultat> = chaine_vers_couleur (<maChaine> est chaîne ANSI)
+//
+// Paramètres :
+//	maChaine (chaîne ANSI) : Chaine de texte récupérée par exemple dans une base de données
+// Valeur de retour :
+// 	Couleur
+//
+// Exemple :
+// 
+// HLitPremier(données, flag_vie_couleur_chaine)
+//
+// SI PAS HEnDehors() ALORS
+//	 flag_vie_couleur = g_chaine_vers_couleur(données.flag_vie_couleur_chaine)
+// SINON
+//   flag_vie_couleur = Noir
+// FIN
+//
+// Auteur : Olivier "Lespacedunmatin" G. <olivier@lespacedunmatin.info>
+// Les remerciements peuvent se faire dans un bar à votre convenance
+//
+
+PROCEDURE chaine_vers_couleur(maChaine est une chaîne ANSI)
+
+SELON maChaine
+	CAS "Blanc"
+		RENVOYER Blanc
+	CAS "Noir"
+		RENVOYER Noir
+	CAS "GrisClair"
+		RENVOYER GrisClair
+	CAS "GrisFoncé"
+		RENVOYER GrisFoncé
+	CAS "RougeClair"
+		RENVOYER RougeClair
+	CAS "RougeFoncé"
+		RENVOYER RougeFoncé
+	CAS "RougePastel"
+		RENVOYER RougePastel
+	CAS "JauneClair"
+		RENVOYER JauneClair
+	CAS "JauneFoncé"
+		RENVOYER JauneFoncé
+	CAS "JaunePastel"
+		RENVOYER JaunePastel
+	CAS "VertClair"
+		RENVOYER VertClair
+	CAS "VertFoncé"
+		RENVOYER VertFoncé
+	CAS "VertPastel"
+		RENVOYER VertPastel
+	CAS "MagentaClair"
+		RENVOYER MagentaClair
+	CAS "MagentaFoncé"
+		RENVOYER MagentaFoncé
+	CAS "MagentaPastel"
+		RENVOYER MagentaPastel
+	CAS "CyanClair"
+		RENVOYER CyanClair
+	CAS "CyanFoncé"
+		RENVOYER CyanFoncé
+	CAS "CyanPastel"
+		RENVOYER CyanPastel
+	CAS "BleuClair"
+		RENVOYER BleuClair
+	CAS "BleuFoncé"
+		RENVOYER BleuFoncé
+	CAS "BleuPastel"
+		RENVOYER BleuPastel
+	CAS "JauneBulle"
+		RENVOYER JauneBulle
+	AUTRE CAS
+		RENVOYER Transparent
+FIN
